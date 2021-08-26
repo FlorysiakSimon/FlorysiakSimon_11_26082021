@@ -1,1 +1,24 @@
 @import 'variables.scss';
+
+.errorPage{
+    color:$primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    &404{
+        font-weight:700;
+        font-size:288px;
+        margin:0;
+    }
+    &Text{
+        font-weight:500;
+        font-size:36px;
+        margin-bottom:5em;
+    }
+    &Link{
+        font-size:18px;
+        color:$primary;
+        
+    }
+}

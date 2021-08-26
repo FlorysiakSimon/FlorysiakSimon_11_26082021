@@ -16,8 +16,8 @@ export default function App() {
         <Header/>            
         <Switch>
           <Route path="/about" component={AboutPage} />
-          <Route path="/" component={HomePage} />    
-          <Route component={ErrorPage} />
+          <Route exact path="/" component={HomePage} />    
+          <Route path="*" component={ErrorPage}/>
         </Switch>
         <Footer/>
     </Router>
