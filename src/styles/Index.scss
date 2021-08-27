@@ -1,5 +1,6 @@
 * {
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 ul,
@@ -15,5 +16,11 @@ body {
 
 main,
 header {
-  margin: 0 5%;
+  padding: 0px;
+  max-width: 1240px;
+  margin: auto;
+}
+
+h2{
+  margin:0;
 }

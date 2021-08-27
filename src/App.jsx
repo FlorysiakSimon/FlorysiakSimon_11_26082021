@@ -1,9 +1,6 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import ErrorPage from "./pages/ErrorPage"
@@ -17,7 +14,7 @@ export default function App() {
         <Switch>
           <Route path="/about" component={AboutPage} />
           <Route exact path="/" component={HomePage} />    
-          <Route path="*" component={ErrorPage}/>
+          <Route component={ErrorPage}/>
         </Switch>
         <Footer/>
     </Router>
