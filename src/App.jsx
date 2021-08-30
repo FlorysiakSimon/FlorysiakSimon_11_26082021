@@ -6,6 +6,7 @@ import Footer from "./components/Footer"
 import ErrorPage from "./pages/ErrorPage"
 import HomePage from "./pages/HomePage"
 import AboutPage from "./pages/AboutPage"
+import ApartmentPage from "./pages/ApartmentPage";
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
         <Header/>            
         <Switch>
           <Route path="/about" component={AboutPage} />
-          <Route exact path="/" component={HomePage} />    
+          <Route exact path="/" component={HomePage} />  
+          <Route path="/apartment/:id" component={ApartmentPage} />  
           <Route component={ErrorPage}/>
         </Switch>
         <Footer/>

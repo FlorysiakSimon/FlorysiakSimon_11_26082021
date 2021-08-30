@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
-import banner from '../assets/banner_home.png'
 import '../styles/Banner.scss';
 
 export default class Banner extends Component {
+
     render() {
+
+        const {imgContent, imgSrc, imgAlt} = this.props;
+
         return (
             <div className="banner">
-                <img className="bannerImg" src={banner} alt='banniere'/>
-                <h1 className="bannerTitle">Chez vous, partout et ailleurs</h1>
+                <img className="bannerImg" src={imgSrc} alt={imgAlt}/>
+                <h1 className="bannerTitle">{imgContent}</h1>
             </div>
         )
     }
