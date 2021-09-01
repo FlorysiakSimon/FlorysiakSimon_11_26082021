@@ -1,0 +1,51 @@
+@import "variables.scss";
+
+.apartment {
+  display: flex;
+  justify-content: space-between;
+  &Info {
+    &Title {
+      color: $primary;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 142.6%;
+    }
+    &Location {
+      color: $primary;
+      font-weight: 500;
+      font-size: 18px;
+      margin-top: 0px;
+    }
+  }
+  &Host {
+    display: flex;
+    &Name {
+      display: flex;
+      flex-direction: column;
+      color: $primary;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 142.6%;
+      margin-right: 10px;
+      span {
+        margin-bottom: 5px;
+      }
+    }
+    &Img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.dropdown {
+  flex-basis: 47%;
+}
