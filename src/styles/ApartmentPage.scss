@@ -1,5 +1,9 @@
 @import "variables.scss";
 
+main {
+  padding: 0px 20px;
+}
+
 .apartment {
   display: flex;
   justify-content: space-between;
@@ -52,4 +56,39 @@
 .list {
   background-color: $white;
   flex-basis: 47%;
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown,
+  .list {
+    flex-basis: 100%;
+  }
+
+  .apartment {
+    flex-direction: column;
+    &Name {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      margin-top: 16px;
+    }
+    &Info {
+      &Title {
+        font-size: 18px;
+      }
+      &Location {
+        margin-top: 5px;
+        font-size: 14px;
+      }
+    }
+    &Host {
+      &Name {
+        font-size: 12px;
+        span {
+        }
+      }
+      &Img {
+      }
+    }
+  }
 }

@@ -12,3 +12,9 @@
   height: 25px;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .tag {
+    font-size: 10px;
+  }
+}

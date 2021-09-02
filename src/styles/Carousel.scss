@@ -25,3 +25,22 @@
     top: 156px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    &Img {
+      height: 255px;
+      border-radius: 10px;
+    }
+    &ArrowLeft {
+      width: 11px;
+      height: 19px;
+      top: 118px;
+    }
+    &ArrowRight {
+      width: 11px;
+      height: 19px;
+      top: 118px;
+    }
+  }
+}
