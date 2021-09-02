@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import data from '../assets/data.json';
+import Carousel from '../components/Carousel';
 import Host from '../components/Host';
 import Tag from '../components/Tag';
 import Dropdown from '../components/Dropdown';
@@ -17,6 +18,7 @@ export default class ApartmentPage extends Component {
         const {description,equipments,host,location,pictures,rating,tags,title} = this.data;
         return (
             <main>
+                <Carousel carouselImg={pictures}/>
                 <section className="apartment">
                     <div className="apartmentInfo">
                         <h2 className="apartmentInfoTitle">{title}</h2>
@@ -32,7 +34,7 @@ export default class ApartmentPage extends Component {
                 </section>
                 <section className="details">
                 <Dropdown dropDownTitle='Description' dropDownContent={description}/>
-                    <ul className="dropdown">
+                    <ul className="dropdown list">
                         <Dropdown dropDownTitle='Équipements' dropDownContent={
                             equipments.map((equipment,index) =>{
                                 return <li key={`${equipment}${index}`}>{equipment}</li>

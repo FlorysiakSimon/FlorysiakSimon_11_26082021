@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+.carousel {
+  position: relative;
+  margin-bottom: 2em;
+  &Img {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  &ArrowLeft {
+    position: absolute;
+    width: 46px;
+    height: 79px;
+    left: 23px;
+    top: 156px;
+  }
+  &ArrowRight {
+    transform: rotate(180deg);
+    position: absolute;
+    width: 46px;
+    height: 79px;
+    right: 23px;
+    top: 156px;
+  }
+}

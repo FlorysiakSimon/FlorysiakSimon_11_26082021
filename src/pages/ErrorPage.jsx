@@ -7,9 +7,7 @@ export default class ErrorPage extends Component {
         return (
             <main className='errorPage'>
 				<p className='errorPage404'>404</p>
-				<p className='errorPageText'>
-					Oups ! La page que vous demandez n'existe pas.
-				</p>
+				<p className='errorPageText'>Oups ! La page que vous demandez n'existe pas.</p>
 				<Link className='errorPageLink' to='/'>Retourner sur la page d’accueil</Link>
 			</main>
         )

@@ -25,9 +25,10 @@
 
 @media screen and (max-width: 768px) {
   .banner {
+    margin-bottom: 0px;
     &Img {
       height: 111px;
-      border-radius: 25px;
+      border-radius: 10px;
       object-fit: cover;
     }
     &Title {
@@ -36,7 +37,7 @@
       left: 50%;
       top: 50%;
       color: $white;
-      transform: translate(-50%, -50%);
+      transform: translate(-80%, -50%);
     }
   }
 }
