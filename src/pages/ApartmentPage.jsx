@@ -14,7 +14,7 @@ export default class ApartmentPage extends Component {
     }
 
     render() {
-        console.log(this.data)
+        
         const {description,equipments,host,location,pictures,rating,tags,title} = this.data;
         return (
             <main>
@@ -34,13 +34,13 @@ export default class ApartmentPage extends Component {
                 </section>
                 <section className="details">
                 <Dropdown dropDownTitle='Description' dropDownContent={description}/>
-                    <ul className="dropdown list">
-                        <Dropdown dropDownTitle='Équipements' dropDownContent={
-                            equipments.map((equipment,index) =>{
-                                return <li key={`${equipment}${index}`}>{equipment}</li>
-                            })}
-                        />
-                    </ul>
+                <ul className="dropdown list">
+                    <Dropdown dropDownTitle='Équipements' dropDownContent={
+                        equipments.map((equipment,index) =>{
+                            return <li key={`${equipment}${index}`}>{equipment}</li>
+                        })}
+                    />
+                </ul>
                 </section>
             </main>
         )

@@ -19,6 +19,7 @@
   }
   &Host {
     display: flex;
+    margin-bottom: 18px;
     &Name {
       display: flex;
       flex-direction: column;
@@ -85,9 +86,16 @@
       }
     }
     &Host {
+      margin-bottom: 0;
       &Name {
         font-size: 12px;
         span {
+        }
+      }
+      &Rating {
+        & img {
+          width: 15px;
+          height: 15px;
         }
       }
       &Img {

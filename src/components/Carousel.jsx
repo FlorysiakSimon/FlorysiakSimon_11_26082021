@@ -10,23 +10,18 @@ export default class Carousel extends Component {
         };
         this.plusSlide = this.plusSlide.bind(this);
         this.lessSlide = this.lessSlide.bind(this)
-    }
+    } 
 
     plusSlide(){
-        if(this.state.arrayIndex >= this.props.pictures.length -1){
-            this.setState({ arrayIndex: 0 })
-        } else { this.setState({ arrayIndex: this.state.arrayIndex + 1 })}
+        this.state.arrayIndex >= this.props.pictures.length -1 
+        ? this.setState({ arrayIndex: 0 })
+        : this.setState({ arrayIndex: this.state.arrayIndex + 1 })
     }
 
     lessSlide(){
-        if(this.state.arrayIndex === 0 ){
-            this.setState({ arrayIndex: this.props.pictures.length - 1})
-        } else {this.setState({ arrayIndex: this.state.arrayIndex - 1 })}
-
-       /* { this.state.arrayIndex === 0
-            ?( this.setState({ arrayIndex: this.props.pictures.length - 1}))
+         this.state.arrayIndex === 0
+            ? this.setState({ arrayIndex: this.props.pictures.length - 1})
             : this.setState({ arrayIndex: this.state.arrayIndex - 1 })
-        }*/
     }
 
     render() {
@@ -34,16 +29,13 @@ export default class Carousel extends Component {
         return (
             <section className="carousel">
                 <img className="carouselImg" src={this.props.pictures[this.state.arrayIndex]} alt="appartement"/>
-                
                 {this.props.pictures.length > 1 
-                ? (<div>
+                ? <div>
                   <img className="carouselArrowLeft" onClick={this.lessSlide} src={arrow} alt="arrow"/>
                   <img className="carouselArrowRight" onClick={this.plusSlide} src={arrow} alt="arrow"/>
-                  </div> )
+                  </div> 
                 : ""
                 }
-                
-
             </section>
         )
     }
