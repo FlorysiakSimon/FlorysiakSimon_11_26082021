@@ -6,27 +6,39 @@ export default class Carousel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-        arrayIndex: 0
+            arrayIndex: 0,
         };
+        this.plusSlide = this.plusSlide.bind(this);
+        this.lessSlide = this.lessSlide.bind(this)
     }
-    handleClick(){
-        const arrayIndex = this.state.arrayIndex;
-        this.setState({
-            arrayIndex: arrayIndex++
-          });
+
+    plusSlide(){
+        if(this.state.arrayIndex >= this.props.pictures.length -1){
+            this.setState({ arrayIndex: 0 })
+        } else { this.setState({ arrayIndex: this.state.arrayIndex + 1 })}
+    }
+
+    lessSlide(){
+        if(this.state.arrayIndex === 0 ){
+            this.setState({ arrayIndex: this.props.pictures.length - 1})
+        } else {this.setState({ arrayIndex: this.state.arrayIndex - 1 })}
+
+       /* { this.state.arrayIndex === 0
+            ?( this.setState({ arrayIndex: this.props.pictures.length - 1}))
+            : this.setState({ arrayIndex: this.state.arrayIndex - 1 })
+        }*/
     }
 
     render() {
-        const {carouselImg} = this.props;
-        console.log(carouselImg.length)
+        
         return (
             <section className="carousel">
-                <img className="carouselImg" src={carouselImg[this.state.arrayIndex]} alt="appartement"/>
+                <img className="carouselImg" src={this.props.pictures[this.state.arrayIndex]} alt="appartement"/>
                 
-                {carouselImg.length > 1 
+                {this.props.pictures.length > 1 
                 ? (<div>
-                  <img className="carouselArrowLeft" src={arrow} alt="arrow"/>
-                  <img className="carouselArrowRight" onClick={this.handleClick} src={arrow} alt="arrow"/>
+                  <img className="carouselArrowLeft" onClick={this.lessSlide} src={arrow} alt="arrow"/>
+                  <img className="carouselArrowRight" onClick={this.plusSlide} src={arrow} alt="arrow"/>
                   </div> )
                 : ""
                 }

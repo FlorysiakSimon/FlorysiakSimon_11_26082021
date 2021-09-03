@@ -18,7 +18,7 @@ export default class ApartmentPage extends Component {
         const {description,equipments,host,location,pictures,rating,tags,title} = this.data;
         return (
             <main>
-                <Carousel carouselImg={pictures}/>
+                <Carousel pictures={pictures}/>
                 <section className="apartment">
                     <div className="apartmentInfo">
                         <h2 className="apartmentInfoTitle">{title}</h2>

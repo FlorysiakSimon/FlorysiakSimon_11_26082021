@@ -36,6 +36,12 @@
       height: 64px;
       border-radius: 50%;
     }
+    &Rating {
+      & img {
+        width: 30px;
+        height: 30px;
+      }
+    }
   }
 }
 
