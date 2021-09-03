@@ -12,6 +12,17 @@
 
 HTML / SASS / React / React Router / React DOM
 
-## Lien du projet :
+## Installation
 
-[github-pages](https://florysiaksimon.github.io/FlorysiakSimon_11_26082021/)
+1. Clone this repository
+   ```sh
+   git clone https://github.com/FlorysiakSimon/FlorysiakSimon_11_26082021
+   ```
+2. Install NPM packages
+   ```sh
+   npm i
+   ```
+3. Run the project
+   ```sh
+   npm start
+   ```
