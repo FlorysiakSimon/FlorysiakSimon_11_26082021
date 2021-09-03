@@ -11,9 +11,8 @@ export default class Rating extends Component {
              rating > i 
                 ? stars.push(<img src={starRed} alt="étoile rouge"/>)
                 : stars.push(<img src={starGray} alt="étoile grise"/>)
-            
-        }
-        
+            }
+
         return (
             <div className="apartmentHostRating">
                 {stars.map((star,index) => {
