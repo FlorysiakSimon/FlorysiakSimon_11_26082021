@@ -7,7 +7,9 @@
   object-fit: cover;
   filter: brightness(0.7);
 }
-
+.aboutDropdown {
+  margin-bottom: 6.5em;
+}
 @media screen and (max-width: 768px) {
   .aboutBanner {
     margin-bottom: 20px;

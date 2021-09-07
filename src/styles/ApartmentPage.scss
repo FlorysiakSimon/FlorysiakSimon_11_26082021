@@ -20,6 +20,8 @@
   &Host {
     display: flex;
     margin-bottom: 18px;
+    justify-content: flex-end;
+    align-items: center;
     &Name {
       display: flex;
       flex-direction: column;
@@ -28,9 +30,6 @@
       font-size: 18px;
       line-height: 142.6%;
       margin-right: 10px;
-      span {
-        margin-bottom: 5px;
-      }
     }
     &Img {
       width: 64px;

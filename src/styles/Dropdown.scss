@@ -13,12 +13,18 @@
     border-radius: 10px;
     justify-content: space-between;
     align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &Arrow {
     margin-right: 16px;
+    transition: transform 0.2s;
+
     &-active {
       margin-right: 16px;
-      transform: rotate(180deg);
+      transform: rotate(-180deg);
+      transition: transform 0.2s;
     }
   }
   &Title {
@@ -46,6 +52,7 @@
   .dropdown {
     &Title {
       font-size: 13px;
+      padding: 7px 15px;
     }
     &Arrow {
       margin-right: 13px;

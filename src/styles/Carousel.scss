@@ -26,8 +26,16 @@
   }
 }
 
+.carouselArrowLeft:hover,
+.carouselArrowRight:hover {
+  filter: invert(37%) sepia(93%) saturate(7471%) hue-rotate(356deg)
+    brightness(91%) contrast(135%);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .carousel {
+    margin-bottom: 10px;
     &Img {
       height: 255px;
       border-radius: 10px;
@@ -36,11 +44,13 @@
       width: 11px;
       height: 19px;
       top: 118px;
+      left: 7px;
     }
     &ArrowRight {
       width: 11px;
       height: 19px;
       top: 118px;
+      right: 7px;
     }
   }
 }

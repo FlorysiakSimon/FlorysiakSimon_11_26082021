@@ -18,6 +18,9 @@ header {
       text-decoration: none;
       font-weight: 500;
       line-height: 34px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -39,5 +42,8 @@ header {
         font-size: 12px;
       }
     }
+  }
+  .about {
+    margin-left: 1.5em;
   }
 }
