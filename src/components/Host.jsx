@@ -13,7 +13,6 @@ export default class Host extends Component {
                 <div className="apartmentHostName">
                     <span>{firstName}</span>
                     <span>{lastName}</span>
-                    
                 </div>
                 <img className="apartmentHostImg" src={picture} alt={name} />
             </div>
