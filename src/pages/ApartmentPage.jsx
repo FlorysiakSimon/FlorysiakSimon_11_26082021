@@ -6,6 +6,7 @@ import Tag from '../components/Tag';
 import Dropdown from '../components/Dropdown';
 import "../styles/ApartmentPage.scss"
 import Rating from '../components/Rating';
+import {Redirect} from "react-router-dom";
 export default class ApartmentPage extends Component {
     constructor(props) {
         super(props);
@@ -14,7 +15,9 @@ export default class ApartmentPage extends Component {
     }
 
     render() {
-        
+
+        if(!this.data) return <Redirect to="/404"/>
+
         const {description,equipments,host,location,pictures,rating,tags,title} = this.data;
         return (
             <main>
