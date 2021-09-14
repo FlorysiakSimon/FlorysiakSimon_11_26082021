@@ -36,6 +36,7 @@ export default class Carousel extends Component {
                   </div> 
                 : ""
                 }
+                <p className='carouselCounter'>{this.state.arrayIndex + 1}/{this.props.pictures.length}</p>
             </section>
         )
     }

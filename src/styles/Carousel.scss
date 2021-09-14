@@ -24,6 +24,13 @@
     right: 23px;
     top: 156px;
   }
+  &Counter {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    color: white;
+    user-select: none;
+  }
 }
 
 .carouselArrowLeft:hover,
@@ -51,6 +58,9 @@
       height: 19px;
       top: 118px;
       right: 7px;
+    }
+    &Counter {
+      display: none;
     }
   }
 }
