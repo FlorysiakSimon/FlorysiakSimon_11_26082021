@@ -14,7 +14,7 @@ HTML / SASS / React / React Router / React DOM
 
 ## Lien du projet
 
-[github-pages](https://florysiaksimon.github.io/FlorysiakSimon_11_26082021/)
+[github-pages](https://florysiaksimon.github.io/Kasa/)
 
 ## Installation
 
