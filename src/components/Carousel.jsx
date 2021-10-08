@@ -31,8 +31,8 @@ export default class Carousel extends Component {
                 <img className="carouselImg" src={this.props.pictures[this.state.arrayIndex]} alt="appartement"/>
                 {this.props.pictures.length > 1 
                 ? <div>
-                  <img className="carouselArrowLeft" onClick={this.lessSlide} src={arrow} alt="arrow"/>
-                  <img className="carouselArrowRight" onClick={this.plusSlide} src={arrow} alt="arrow"/>
+                    <img className="carouselArrowLeft" onClick={this.lessSlide} src={arrow} alt="arrow"/>
+                    <img className="carouselArrowRight" onClick={this.plusSlide} src={arrow} alt="arrow"/>    
                   </div> 
                 : ""
                 }
