@@ -20,7 +20,7 @@ HTML / SASS / React / React Router / React DOM
 
 1. Clone this repository
    ```sh
-   git clone https://github.com/FlorysiakSimon/FlorysiakSimon_11_26082021
+   git clone https://github.com/FlorysiakSimon/Kasa
    ```
 2. Install NPM packages
    ```sh
